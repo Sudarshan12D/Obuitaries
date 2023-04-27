@@ -9,8 +9,293 @@ li,
 p {
   margin: 0;
   padding: 0;
+  font-family:Arial, Helvetica, sans-serif;
 }
 a {
   color: inherit;
   text-decoration: none;
+}
+input[type="file"] {
+  display: none;
+}
+
+#title {
+  background-color: white;
+  width: 100%;
+  height: 6vh;
+  font-size:12px;
+  border-top: 3px solid grey;
+  border-bottom: 1px solid lightgrey;
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+#new-ob {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+#new-ob label {
+  cursor: pointer;
+}
+
+#new-ob:hover {
+  background-color: grey;
+  color: white;
+  cursor: pointer;
+}
+
+.content {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.NA {
+  width: 100%;
+  display:flex;
+  justify-content: center;
+  font-weight: bolder;
+  align-self: center;
+  color: rgba(172, 172, 172, 0.507);
+  text-align: center;
+}
+.create {
+  transition: background-color 0.5s ease;
+  position: fixed;
+  top:0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.input-holder {
+  padding-top: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.exit {
+  padding-top: 10px;
+  padding-right: 5px;
+  font-size: x-large;
+  cursor: pointer;
+  color: grey;
+  float: right;
+}
+.exit label {
+  cursor: pointer;
+}
+.edit-file {
+  padding-top: 50px;
+}
+.edit-name {
+  padding-top: 10px;
+}
+.edit-name input {
+  width: 600px;
+  height: 50px;
+  padding-left: 20px;
+  border-color: rgba(128, 128, 128, 0.705);
+}
+.edit-name input:focus {
+  outline: none;
+  border-color: rgb(70, 230, 163);
+}
+.edit-date {
+  padding-top: 20px;
+  display: flex;
+  padding-bottom: 20px;
+}
+.edit-date input {
+  border: 0px;
+}
+.edit-date input:focus {
+  outline: none;
+}
+.textHolder {
+  width: 150px;
+}
+.custom-file-upload {
+  cursor: pointer;
+  text-decoration: none;
+  transition: text-decoration 0.3s ease;
+}
+.custom-file-upload:hover p {
+  text-decoration: underline;
+}
+.submit {
+  display: flex;
+  width: 615px;
+  height: 60px;
+  padding-left: 10px;
+  border-color: white;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(70, 230, 163);
+  cursor: pointer;
+  color: white;
+}
+.submit label {
+  cursor: pointer;
+}
+.submit:hover {
+  background-color: rgb(78, 78, 78);
+}
+.loading {
+  display: flex;
+  width: 615px;
+  height: 60px;
+  padding-left: 10px;
+  border-radius: 10px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(78, 78, 78);
+  color: white;
+}
+.obituaries {
+  display: flex;
+  max-width: 100vw;
+  gap: 10px;
+}
+.col1 {
+  display: flex;
+  flex-direction: column;
+}
+.col2 {
+  display: flex;
+  flex-direction: column;
+}
+.col3 {
+  display: flex;
+  flex-direction: column;
+}
+.col4 {
+  display: flex;
+  flex-direction: column;
+}
+.obHolder {
+  height: fit-content;
+  width: 18vw;
+  margin-left: 3vw;
+  margin-right: 3vw;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5%;
+  border: 0.5px solid lightgray;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.obPic {
+  cursor: pointer;
+}
+.obName {
+  text-align: center;
+  font-size: small;
+  font-weight: 100;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+.obLife {
+  text-align: center;
+  font-size: xx-small;
+  font-weight: 100;
+  padding-bottom: 10px;
+}
+.obOb {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 10px;
+  padding-top: 20px;
+  font-weight: 100;
+}
+.audioPlayer {
+  align-self: center;
+  text-align: center;
+  font-size: x-small;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  border: 1px solid grey;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+.audioPlayer:hover {
+  background-color: rgb(82, 82, 82);
+  color: white;
+}
+.highlight {
+  background-color: lightgrey;
+  
+}
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ring div {
+  color: grey;
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #fff transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 768px) {
+.obituaries {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.obHolder {
+  width: 30vw;
+}
+}
+
+@media (max-width: 414px) {
+  #new-ob label {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .obituaries {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .obHolder {
+    width: 250px;
+  }
 }
