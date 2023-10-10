@@ -8,4 +8,4 @@
 * The user-uploaded image and the Converted Speech are stored in Cloudinary, ensuring efficient, secure, and optimized handling of visual data for the generated obituary.
 * The final obituary showcases the image alongside the ChatGPT-generated paragraph. An integrated play button activates the audio that narrates the paragraph.
 
-*** check out the Website -> (https://harmonious-duckanoo-2f98c1.netlify.app/) ***
+***check out the Website -> (https://harmonious-duckanoo-2f98c1.netlify.app/)***
